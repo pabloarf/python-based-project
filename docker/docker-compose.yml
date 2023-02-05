@@ -1,0 +1,12 @@
+version: "3.4"
+
+volumes:
+  pythonbase_bundle:
+
+services:
+  pythonbase:
+    command: python3
+    build:
+      target: runtime
+      context: ../
+      dockerfile: docker/Dockerfile
